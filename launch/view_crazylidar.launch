@@ -1,10 +1,8 @@
 <!--
-  Used for visualising rplidar in action.  
-  
-  It requires rplidar.launch.
+  Used for visualising crazylidar in action.
+
+  It requires crazylidar.launch.
  -->
 <launch>
-  <include file="$(find crazylidar_node)/launch/crazylidar.launch" />
-
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find crazylidar_node)/rviz/crazylidar.rviz" />
 </launch>

@@ -22,13 +22,6 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-)
-
-
 catkin_package()
 add_executable(crazylidarNode src/node.cpp ${SELIDAR_DRV_SRC})
 target_link_libraries(crazylidarNode ${catkin_LIBRARIES})
